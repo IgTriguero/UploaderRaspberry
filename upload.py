@@ -121,7 +121,6 @@ for indice in paraSubir:
 
 if(input(f"{bcolors.BOLD}{bcolors.OKGREEN}ENTER{bcolors.ENDC} para subir los archivos, escribe {bcolors.BOLD}{bcolors.FAIL}cancel{bcolors.ENDC} para cancelar").lower() != "cancel"):
    for comando in comandos:
-      print(comando['comando'])
       if(comando['comprimido']):
          descomprimir(comando['desde'], comando['nombre'])
       os.system(comando['comando'])
