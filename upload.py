@@ -74,6 +74,11 @@ for file in os.listdir(desde):
    })
    i += 1
 
+for i in range(len(directorios)-1): 
+   for j in range(0, len(directorios)-i-1): 
+      if ord(directorios[j]['name'][0]) > ord(directorios[j+1]['name'][0]) : 
+         directorios[j]['name'], directorios[j+1]['name'] = directorios[j+1]['name'], directorios[j]['name'] 
+
 respuesta = ' '
 paraSubir = []
 while respuesta.lower() != "":
